@@ -1,0 +1,95 @@
+@import 'cssreset.scss';
+@include css_reset();
+@import 'header.scss';
+
+
+@font-face {
+    font-family: 'fontello';
+    src:url('../assets/fonts/fontello.woff2?63932190') format('woff2'),
+        url('../assets/fonts/fontello.woff?63932190') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+  }
+   
+.icon-basket:before { content: '\e73d'; } 
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    overflow: auto;
+}
+
+main{
+    section.description_section{
+        .top_description{
+            padding: 24px 64px 24px 16px;
+            line-height: 23px;
+            p{
+                padding-bottom: 15px;
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+        .catalog_section{
+            display: grid;
+            width: 274px;
+            height: 469px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 'a b'
+            'c d'
+            'e e';
+            padding-left: 16px;
+            a{
+                font-size: 16px;
+                font-weight: 400;
+                color: #4541FE;
+            }
+            .mens_catalog{
+                display: grid;
+                grid-area: a;
+                grid-template-rows: repeat(6, 1fr);
+            }
+            .womans_catalog{
+                display: grid;
+                grid-area: b;
+                grid-template-rows: repeat(6, 1fr);
+            }
+            .shoes_catalog{
+                display: grid;
+                grid-area: c;
+                grid-template-rows: repeat(6, 1fr);
+                padding-top: 24px;
+            }
+            .accessories{
+                display: grid;
+                grid-area: d;
+                grid-template-rows: repeat(6, 1fr);
+                padding-top: 24px;
+            }
+            .price_cuts{
+                display: grid;
+                grid-area: e;
+                grid-template-rows: repeat(6, 1fr);
+                padding-top: 24px;
+            }
+            a.catalog_header{
+                font-size: 18px;
+                font-weight: 700;
+                text-decoration: underline;
+                color: #4541FE;
+                padding-bottom: 12px;
+            }
+        }
+    }
+    
+}
