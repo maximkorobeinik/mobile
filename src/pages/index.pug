@@ -1,49 +1,89 @@
-<!DOCTYPE html>
-include header.pug
-.header_content
-    .header_images
-        .header_slide 
-            img(src="assets/img/header_pic.png", alt="")
-            .header_image_title
-                p.image_disc Распродажа
-                p.discount до -15%
-main
-    section.description_section
-        .top_description
-            p Фэтч&nbsp;&mdash; мультибрендовый магазин модной одежды.
-            p Следим за&nbsp;трендами и&nbsp;часто обновляем ассортимент.
-            p Доставляем по&nbsp;москве за&nbsp;день, по&nbsp;России&nbsp;&mdash; за&nbsp;неделю.
-        .catalog_section
-            .mens_catalog
-                a.catalog_header(href="") Для мужчин
-                a(href="") Верхняя одежда
-                a(href="") Рубашки и поло
-                a(href="") Трикотаж
-                a(href="") Брюки и джинсы
-                a(href="") Бельё и носки
-            .womans_catalog
-                a.catalog_header(href="") Для женщин
-                a(href="") Верхняя одежда
-                a(href="") Рубашки и поло
-                a(href="") Трикотаж
-                a(href="") Брюки и джинсы
-                a(href="") Бельё и носки
-            .shoes_catalog
-                a.catalog_header(href="") Обувь
-                a(href="") Кроссовки и кеды
-                a(href="") Ботинки
-            .accessories
-                a.catalog_header(href="") Аксессуары
-                a(href="") Сумки и рюкзаки
-                a(href="") Часы
-                a(href="") Бижутерия
-                a(href="") Средства для ухода
-            .price_cuts
-                a.catalog_header(href="") Скидки
-                a(href="") Летняя распродажа
-                a(href="") Коллекция 2018
-
-
-
-            
-
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="styles/main.css")
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    body
+        include header.pug
+        .header_content
+            .header_images
+                .header_slide 
+                    img(src="assets/img/header_pic.png", alt="")
+                    .header_image_title
+                        p.image_disc Распродажа
+                        <br />
+                        p.discount до &minus;15%
+                .header_slide 
+                    img(src="assets/img/header_pic.png", alt="")
+                    .header_image_title
+                        p.image_disc Распродажа
+                        <br />
+                        p.discount до &minus;15%
+                .header_slide 
+                    img(src="assets/img/header_pic.png", alt="")
+                    .header_image_title
+                        p.image_disc Распродажа
+                        <br />
+                        p.discount до &minus;15%
+        main
+            section.description_section
+                .top_description
+                    p Фетч&nbsp;&mdash; мультибрендовый магазин модной одежды.
+                    p Следим за&nbsp;трендами и&nbsp;часто обновляем ассортимент.
+                    p Доставляем по&nbsp;Москве за&nbsp;день, по&nbsp;России&nbsp;&mdash; за&nbsp;неделю.
+                .catalog_section
+                    .mens_catalog
+                        a.catalog_header(href="") Для мужчин
+                        a(href="") Верхняя одежда
+                        a(href="") Рубашки и поло
+                        a(href="") Трикотаж
+                        a(href="") Брюки и джинсы
+                        a(href="") Бельё и носки
+                    .womans_catalog
+                        a.catalog_header(href="") Для женщин
+                        a(href="") Верхняя одежда
+                        a(href="") Рубашки и поло
+                        a(href="") Трикотаж
+                        a(href="") Платья и юбки
+                        a(href="") Бельё и носки
+                    .shoes_catalog
+                        a.catalog_header(href="") Обувь
+                        a.costyl(href="") Кроссовки и кеды
+                        a(href="") Ботинки
+                    .accessories
+                        a.catalog_header(href="") Аксессуары
+                        a(href="") Сумки и рюкзаки
+                        a(href="") Часы
+                        a(href="") Бижутерия
+                        a(href="") Средства<br /> для ухода
+                    .price_cuts
+                        a.catalog_header(href="") Скидки
+                        a(href="") Летняя распродажа
+                        a(href="") Коллекция 2018
+            section.lookbook_section
+                a.lookbook(href="") Лукбук, лето 2019
+                p.lookbook(href="") Стильные образы для тёплых деньков
+                img(src="assets/img/lookbook_bkgd.png", alt="")
+            section.our_choose
+                a.choose(href="") Выбор редакции:
+                <br />
+                a.choose(href="") часы
+                p.choose_desc ТОП-5 лучших предложений по версии администрации Фетч
+            section.new_collection
+                a.collection(href="") Новая коллекция 
+                <br /> 
+                a.collection(href="") adidas Originals 
+                p.collection_desc Десять крутейших кроссовок
+                img(src="assets/img/collection_bkgd.png", alt="")
+            section.preorder
+                a.preorder(href="") Предзаказ: Maison
+                <br />
+                a.preorder(href="") Margiela Fusion
+                .preorder_desc 
+                    p От 92
+                    p 000&#x20bd
+                img(src="assets/img/shoes_preorder.png", alt="")
+    include footer.pug
+    
