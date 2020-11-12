@@ -1,4 +1,4 @@
-$(document).ready(function(){
-    $('.header_images').slick({
-    });
-  });
+// $(document).ready(function(){
+//     $('.header_images').slick({
+//     });
+//   });
